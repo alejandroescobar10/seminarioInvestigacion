@@ -1,6 +1,6 @@
 const maquinaria = [
     {
-        nombre: "Volqueta International WorkStar 7600",
+        nombre: "FLOTA DE VOLQUETAS INTERNATIONAL WORKSTARK 7600",
         imagen: "./images/volqueta.jpeg",
         disponible:true,
         especificaciones: [
@@ -88,8 +88,8 @@ const maquinaria = [
     },
     {
         nombre: "Excavadora Caterpillar 320D L",
-        imagen: "./images/exca2.jpg", 
-        disponible:true,
+        imagen: "./images/exca4.jpg", 
+        disponible:false,
         especificaciones: [
           "Tipo de máquina: Excavadora hidráulica sobre orugas",
           "Peso operativo: 20.600 kg",
