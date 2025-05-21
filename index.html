@@ -6,9 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cortés Zamora & Cía S.A.S</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      transition: background-image 1s ease-in-out;
+    }
+  </style>
+
 </head>
 
-<body class="bg-black text-white font-sans">
+<body class="text-white font-sans">
   <!-- Navbar Responsive -->
   <nav class="sticky top-0 z-50 bg-white text-orange-500 shadow-md">
     <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
@@ -80,43 +89,79 @@
       </div>
     </div>
   </section>
-
+  <br><br>
   <!-- Proyectos -->
   <section class="p-10 bg-black text-white" id="proyectos">
     <h2 class="text-2xl font-bold text-orange-500 mb-6 text-center">Proyectos</h2>
     <div class="space-y-10">
-      <div class="flex flex-col md:flex-row items-center gap-6">
+
+      <!-- Proyecto 1 -->
+      <div class="flex flex-col md:flex-row items-center gap-6 project-item">
         <img src="./images/proyectos.jpg" alt="Ciudad Country" class="w-full md:w-1/3 rounded shadow-lg" />
         <div class="md:w-2/3 text-left">
-          <a href="#" class="text-lg font-semibold text-orange-400 underline">Ciudad Country – Obras Macro Urbanismo</a>
-          <p class="mb-2 text-sm">Contratante: Jaramillo Mora S.A. Obras de urbanismo y movimiento de tierra todo costo.
-            Suministro e instalación.</p>
-          <button class="mt-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded">Ver
-            más</button>
+          <a href="#" class="text-lg font-semibold text-orange-400 underline">
+            Ciudad Country – Obras Macro Urbanismo
+          </a>
+          <p class="mb-2 text-sm">
+            Contratante: Jaramillo Mora S.A. Obras de urbanismo y movimiento de tierra todo costo. Suministro e
+            instalación.
+          </p>
+          <!-- TEXTO EXTRA (oculto por defecto) -->
+          <div class="more-text hidden mb-2 text-sm">
+            <p>• Fecha de inicio: enero 2025</p>
+            <p>• Alcance: movimiento de tierra en 50 ha, nivelación y compactación.</p>
+            <p>• Equipo: 5 excavadoras, 3 camiones volteo, 2 compactadores.</p>
+          </div>
+          <button class="toggle-btn mt-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded">
+            Ver más
+          </button>
         </div>
       </div>
-      <div class="flex flex-col md:flex-row-reverse items-center gap-6">
+
+      <!-- Proyecto 2 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-6 project-item">
         <img src="./images/bonanza7.jpg" alt="Bonanza" class="w-full md:w-1/3 rounded shadow-lg" />
         <div class="md:w-2/3 text-left">
           <a href="#" class="text-lg font-semibold text-orange-400 underline">Bonanza</a>
-          <p class="mb-2 text-sm">Contratante: Unión Temporal Normandía – Colpatria. Construcción de vías, terrazas,
-            patios y excavaciones varias.</p>
-          <button class="mt-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded">Ver
-            más</button>
+          <p class="mb-2 text-sm">
+            Contratante: Unión Temporal Normandía – Colpatria. Construcción de vías, terrazas, patios y excavaciones
+            varias.
+          </p>
+          <div class="more-text hidden mb-2 text-sm">
+            <p>• Fecha de inicio: marzo 2025</p>
+            <p>• Detalles: terraplenes de 10 km y patios de maniobra.</p>
+            <p>• Maquinaria: 4 motoniveladoras, 2 retroexcavadoras.</p>
+          </div>
+          <button class="toggle-btn mt-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded">
+            Ver más
+          </button>
         </div>
       </div>
-      <div class="flex flex-col md:flex-row items-center gap-6">
+
+      <!-- Proyecto 3 -->
+      <div class="flex flex-col md:flex-row items-center gap-6 project-item">
         <img src="./images/CRISTALESPLAZA29.jpg" alt="Cristales Plaza" class="w-full md:w-1/3 rounded shadow-lg" />
         <div class="md:w-2/3 text-left">
-          <a href="#" class="text-lg font-semibold text-orange-400 underline">Plazoleta Comercial Cristales Plaza</a>
-          <p class="mb-2 text-sm">Contratante: CRISTALINDA S.A. Movimiento de tierras, excavación y retiro de material
-            sobrante.</p>
-          <button class="mt-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded">Ver
-            más</button>
+          <a href="#" class="text-lg font-semibold text-orange-400 underline">
+            Plazoleta Comercial Cristales Plaza
+          </a>
+          <p class="mb-2 text-sm">
+            Contratante: CRISTALINDA S.A. Movimiento de tierras, excavación y retiro de material sobrante.
+          </p>
+          <div class="more-text hidden mb-2 text-sm">
+            <p>• Fecha de inicio: mayo 2025</p>
+            <p>• Volumen: 8,000 m³ de tierra removida.</p>
+            <p>• Equipo: 3 cargadores frontales, 2 compactadores.</p>
+          </div>
+          <button class="toggle-btn mt-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded">
+            Ver más
+          </button>
         </div>
       </div>
+
     </div>
   </section>
+  <br><br>
 
   <!-- Habilidades -->
   <section class="p-10 bg-black text-white" id="habilidades">
@@ -138,7 +183,7 @@
       </div>
     </div>
   </section>
-
+  <br><br>
   <!-- Servicios -->
   <section class="p-10 bg-black text-white" id="servicios">
     <h2 class="text-2xl font-bold text-center text-orange-500 mb-6">Obras civiles</h2>
@@ -221,6 +266,9 @@
       }
     });
   </script>
+  <script src="./js/background-scroll.js"></script>
+  <script src="./js/toggle.js"></script>
+
 </body>
 
 </html>
